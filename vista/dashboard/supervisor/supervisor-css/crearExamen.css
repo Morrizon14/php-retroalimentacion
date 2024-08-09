@@ -1,0 +1,46 @@
+.cards-superior{
+    justify-content: center;
+}
+.form-horizontal {
+    margin-top: 20px;
+  }
+  /* Estilos para los campos de entrada y selectores */
+.form-control {
+    border: 1px solid #ced4da; /* Color del borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 500px;
+
+  }
+  /* Estilos para etiquetas */
+label {
+    font-weight: bold;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  .btn-success {
+    background-color: #28a745; /* Color de fondo */
+    border-color: #28a745; /* Color del borde */
+    color: #fff; /* Color del texto */
+  }
+  .btn-success:hover {
+    background-color: #218838; /* Color de fondo al pasar el mouse */
+    border-color: #1e7e34; /* Color del borde al pasar el mouse */
+  }
+  /* Estilos para el contenedor del título */
+.title-1 {
+    font-weight: bold;
+    background-color: #bee5eb;
+    padding: 0%;
+    text-align: justify;
+  }
+  .form-exam{
+    margin-top: 10px;
+    background-color: #fff ;
+  }
+  

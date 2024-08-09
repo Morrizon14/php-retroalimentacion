@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif; /* Ejemplo de cambio de fuente */
+}
+.tabla {
+  width: 100%;
+  max-width: 800px; /* Ancho máximo para evitar que la tabla sea demasiado ancha */
+  margin: 20px auto; /* Centrado horizontal */
+  background-color: #f8f9fa; /* Color de fondo de la tabla */
+  border: 1px solid #dee2e6; /* Borde de la tabla */
+  border-radius: 8px; /* Borde redondeado */
+}
+.tabla th, .tabla td {
+  vertical-align: middle; /* Alineación vertical al centro */
+}
+.tabla thead {
+  background-color: #007bff; /* Color de fondo del encabezado */
+  color: #fff; /* Color de texto del encabezado */
+}
+.tabla th, .tabla td {
+  border: 1px solid #dee2e6; /* Borde de las celdas */
+  padding: 10px; /* Espaciado interno */
+}
+.text-left {
+  text-align: left; /* Alineación de texto a la izquierda */
+}
+.text-center {
+  text-align: center; /* Alineación de texto al centro */
+}

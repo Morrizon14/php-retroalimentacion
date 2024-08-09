@@ -1,0 +1,23 @@
+.navbar-default{
+  background-color: #222222;
+}
+.first-section{
+  padding-top:115px; 
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #8000FF; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold; 
+  
+}
+.nav-link {
+  font-size: 16px;
+  color: #8000FF !important; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-weight: bold !important; 
+}
+.icono-usuario{
+  margin-right: 10px; /* Puedes ajustar el valor según lo que necesites */
+}
