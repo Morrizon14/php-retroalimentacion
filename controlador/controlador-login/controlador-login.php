@@ -40,8 +40,8 @@ if(isset($_POST['submit'])){
    $result3 = $stmt3->fetchAll(PDO::FETCH_ASSOC);
 
    //HACEMOS VALIDACIONES SI EXISTE MAS DE CERO  RESULTADOS SIGNIFICA QUE SI HAY USUARIOS EN LA BBDD
-   if(mysqli_num_rows($result) > 0 /* && mysqli_num_rows($result_colaborador) > 0 */){
-
+   //if(mysqli_num_rows($result) > 0 /* && mysqli_num_rows($result_colaborador) > 0 */){
+   if(count($result) > 0) {
       //INGRESAMOS A LOS CAMPOS DEL RESULTADO EN ESTE CASO PERTENECE A LA TABLA LOGIN
       $row = mysqli_fetch_array($result);
       /* $row_colaborador = mysqli_fetch_array($result_colaborador); */
