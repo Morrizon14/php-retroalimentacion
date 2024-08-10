@@ -28,11 +28,16 @@ if(isset($_POST['submit'])){
 
 
    //GUARDAMOS COMO RESULTADO LA SENTENCIA DE LA "BUSQUEDA" Y  LA "CONEXION" 
-   $result = mysqli_query($conn, $select);
+   $stmt = $pdo->query($select);
+   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+   //$result = mysqli_query($conn, $select);
 
-   $result_correo_colaborador = mysqli_query($conn, $correo_colaborador);
-   $result_contra_colaborador = mysqli_query($conn, $contra_colaboradoor);
-   
+   //$result_correo_colaborador = mysqli_query($conn, $correo_colaborador);
+   $stmt2 = $pdo->query($correo_colaborador);
+   $result2 = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+   //$result_contra_colaborador = mysqli_query($conn, $contra_colaboradoor);
+   $stmt3 = $pdo->query($contra_colaboradoor);
+   $result3 = $stmt3->fetchAll(PDO::FETCH_ASSOC);
 
    //HACEMOS VALIDACIONES SI EXISTE MAS DE CERO  RESULTADOS SIGNIFICA QUE SI HAY USUARIOS EN LA BBDD
    if(mysqli_num_rows($result) > 0 /* && mysqli_num_rows($result_colaborador) > 0 */){
@@ -84,5 +89,5 @@ if(isset($_POST['submit'])){
      }
  }
 }
-$conn->close();
+//$pdo->close();
 ?>
